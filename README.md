@@ -20,6 +20,7 @@
 - 완료일: 22. 03. 31
 ### 2 Python 기본기 다시 정립
 - 참고 도서: [점프투파이썬](https://wikidocs.net/book/1)
+- [스터디 노트]( https://be-favorite.github.io/Study_coding/Jump%20to%20python/study_note.html)
 ### 3 백준 1~7 단계별로 풀어보기
 - [Source](https://www.acmicpc.net/step)
 ### 4 자료구조와 알고리즘 공부

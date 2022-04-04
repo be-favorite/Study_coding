@@ -1,0 +1,130 @@
+---
+title: "<center> 점프투파이썬 스터디 </center>"
+author: "방태모"
+date: "`r Sys.Date()`"
+output: 
+ rmdformats::downcute:
+editor_options: 
+ markdown: 
+   wrap: 72
+bibliography: references.bib
+---
+
+```{=html}
+<style>
+.math {
+ font-size: small;
+}
+</style>
+```
+```{r html-setup, include=FALSE}
+# echo - Display code in output document (default = TRUE)
+# eval - Run code in chunk (default = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 준비하기
+
+점프투파이썬 스터디 노트입니다. R 마크다운으로 기록할 예정이므로, 우선
+[{reticulate}](https://github.com/rstudio/reticulate) 패키지를 불러오고
+저는 [Miniforge conda](https://github.com/conda-forge/miniforge)를
+활용해 파이썬 셋업을 해둔 상태이므로 `use_condaenv()` 함수를 이용해 기본
+가상환경을 불러와줍니다.
+
+```{r python-setup}
+library(reticulate)
+use_condaenv("base")
+```
+
+# 02장 파이썬 프로그래밍의 기초, 자료형
+
+자료형을 충분히 이해하지 않고 프로그래밍을 시작하려는 것은 기초 공사가
+마무리되지 않은 상태에서 빌딩을 세우는 것과 같다.
+
+## 02-1 숫자형
+
+### 숫자는 어떻게 만들고 사용할까?
+
+#### 정수형
+
+정수형(Integer)은 말 그대로 정수를 뜻하는 자료형을 말한다.
+
+```{python}
+a = 123 # 양의 정수
+a = -178 # 음의 정수
+a = 0 # 0
+```
+
+#### 실수형
+
+실수형(Floating-point)은 소수점이 포함된 숫자를 말한다.
+
+```{python}
+a = 1.2
+a = -3.45
+```
+
+위 방식은 우리가 일반적으로 볼 수 있는 실수형의 소수점 표현 방식이다.
+
+```{python}
+a = 4.24E10
+a = 4.24e-10
+```
+
+위 방식은 "컴퓨터식 지수 표현 방식"으로 파이썬에서는 `4.24e10` 또는
+`4.24E10`처럼 표현한다. e와 E 둘 중 어느 것을 사용해도 무방하다. 여기서
+`4.24E10`은 $4.24*10^{10}$, `4.24e-10`은 $4.24*10^{-10}$을 의미한다.
+
+#### 8진수와 16진수
+
+8진수(Octal)를 만들기 위햇해서는 숫자가 0o 또는 0O[^1]으로 시작하면
+된다.
+
+[^1]: 숫자 0 + 알파벳 소문자 o 또는 대문자 O
+
+```{python}
+a = 0o177
+```
+
+16진수(Hexadecimal)를 만들기 위해서는 0x로 시작하면 된다.
+
+```{python}
+a = 0x8ff
+b = 0xABC
+```
+
+8진수나 16진수는 파이썬에서 잘 사용하지 않는 형태의 숫자 자료형이니
+간단히 눈으로 익히고 넘어가면 된다.
+
+### 숫자형을 활용하기 위한 연산자
+
+#### 사칙연산
+
+프로그래밍을 한 번도 해본 적이 없는 독자라도 사칙연산(`+`,`-`,`*`,`/`)은
+알고 있을 것이다. 파이썬 역시 계산기와 마찬가지로 다음처럼 연산자를
+사용해 사칙연산을 수행한다. R과도 동일하다.
+
+```{python}
+a = 3
+b = 4
+```
+
+```{python}
+a + b
+a * b
+a / b
+```
+
+#### 제곱 연산자 `**`
+
+```{python}
+a ** b
+```
+
+#### 몫 연산자 `//`
+
+```{python}
+7 / 4
+```
+
+## 02-2 문자열 자료형

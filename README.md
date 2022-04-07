@@ -26,4 +26,4 @@
 - [Source](https://www.acmicpc.net/step)
 ### 4 자료구조와 알고리즘 공부
 - 참고 도서: [이것이 취업을 위한 코딩 테스트다 with 파이썬](http://www.yes24.com/Product/Goods/91433923)
-- 책에서 배운 내용 백준에서 관련 문제 찾아서 풀어보기: https://www.acmicpc.net/problemset
+- [백준](https://www.acmicpc.net/problemset): 책에서 배운 내용 관련 문제 찾아서 풀어보기

@@ -10,9 +10,9 @@
 코딩 테스트 공부 틈틈히 열심히 해보겠습니다.
 
 ## 참고 자료
-- [M1 Mac conda miniforge 셋업](https://hmfactory.tistory.com/26)
-- [코딩테스트 대비 공부방법 (파이썬)](https://in0-pro.tistory.com/51)
-- [알고리즘 대기업 코딩 테스트 공부방법](https://firesoil-it.tistory.com/28)
+- 🔗 [M1 Mac conda miniforge 셋업](https://hmfactory.tistory.com/26)
+- 🔗 [코딩테스트 대비 공부방법 (파이썬)](https://in0-pro.tistory.com/51)
+- 🔗 [알고리즘 대기업 코딩 테스트 공부방법](https://firesoil-it.tistory.com/28)
 
 ## 계획
 
@@ -22,7 +22,7 @@
 
 ### 2 Python 기본기 다시 정립
 - 참고 도서: [점프투파이썬](https://wikidocs.net/book/1)
-- [스터디 노트](https://be-favorite.github.io/Study_coding/Jump%20to%20python/study_note.html)
+- 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Jump%20to%20python/study_note.html)
 - 진행중: 22. 04. 04 -
 
 ### 3 백준 1~7 단계별로 풀어보기

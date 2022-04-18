@@ -1,13 +1,5 @@
 # Study notes for coding test with Python
-코딩테스트 스터디 노트입니다.😀 
-
-주 언어가 R이긴 하지만, 코딩테스트는 Python으로 진행하려고 합니다.
-
-코딩 테스트 환경에서 R을 지원하지 않는 경우도 종종 있고, 지원하더라도 테스트 케이스 검증이 따로 안되더군요.
-
-그리고, R은 참고할만한 레퍼런스도 없습니다.
-
-코딩 테스트 공부 틈틈히 열심히 해보겠습니다.
+Python 코딩테스트 스터디 노트입니다.😀 
 
 ## 참고 자료
 - 🔗 [M1 Mac conda miniforge 셋업](https://hmfactory.tistory.com/26)

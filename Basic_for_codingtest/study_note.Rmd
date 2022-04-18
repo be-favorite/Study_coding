@@ -1,0 +1,86 @@
+---
+title: "<center> 코딩테스트를 위한 파이썬 문법 </center>"
+author: "방태모"
+date: "2022-04-18"
+output: 
+ rmdformats::downcute:
+editor_options: 
+ markdown: 
+   wrap: 72
+bibliography: references.bib
+---
+
+```{=html}
+<style>
+.math {
+ font-size: small;
+}
+</style>
+```
+```{r html-setup, include=FALSE}
+# echo - Display code in output document (default = TRUE)
+# eval - Run code in chunk (default = TRUE)
+# knitr::opts_chunk(echo = TRUE)
+```
+
+본 스터디 노트는 [@na2020]의 "부록 A. 코딩 테스트를 위한 파이썬 문법"을
+기반으로 작성되었습니다. 자세한 내용이 궁금하신 분들은 책을 구매하세요!
+한줄기 빛 같은 책입니다. R 마크다운으로 기록할 예정이므로, 우선
+[{reticulate}](https://github.com/rstudio/reticulate) 패키지를
+명시적으로 불러와주겠습니다.
+
+```{r python-setup}
+library(reticulate)
+```
+
+# 1 자료형
+
+알고리즘 문제 풀이를 포함하여 모든 프로그래밍은 결국 데이터를 다루는
+행위인 만큼, 자료형에 대한 이해는 프로그래밍의 길에 있어서의 첫걸음임.
+
+## 수 자료형
+
+수 자료형(Number)은 코딩 테스트에서 가장 기본적 자료형이며 프로그래밍을
+해봤다면 자연스럽게 사용해봤을 것. 데이터는 모두 "수"로 표현할 수 있음.
+대부분의 프로그램에서는 일반적으로 정수와 실수가 많이 사용되고, 그
+중에서도 정수를 기본으로 사용함. 실제로 코딩 테스트에서도 대부분의 경우
+정수형을 다루는 문제가 출제되며, 실수형을 다루어야 하는 문제는 출제
+빈도가 낮음.
+
+### 정수형
+
+정수형(Integer)은 정수를 다루는 자료형에 해당. 코딩 테스트에서 출제되는
+알고리즘 문제는 대부분 입력과 출력 데이터가 정수형임.
+
+```{python}
+a = 1000 #양의 정수
+print(a)
+
+a = -7 # 음의 정수
+print(a)
+
+a = 0
+print(a)
+```
+
+### 실수형
+
+실수형(Real Number)은 소주점 아래 데이터를 포함하는 수 자료형으로
+파이썬에서는 변수에 소수점을 붙인 수를 대입하면 실수형 변수로 처리함.
+단, 소수부가 0이거나, 정수부가 0인 소수는 0을 생략하고 작성할 수 있음.
+
+```{python}
+a = 157.93
+print(a)
+
+a = -1837.2
+print(a)
+
+# 소수부 0일 때 0 생략 가능
+a = 5.
+print(a)
+
+# 정수부 0일 때 0 생략 가능
+a = -.7
+print(a)
+```

@@ -13,13 +13,12 @@ Python 코딩테스트 스터디 노트입니다.😀
 - 완료일: 22. 03. 31
 
 ### 2 Python 기본기 다시 정립
-- 참고 도서: [점프투파이썬](https://wikidocs.net/book/1)
-- 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Jump%20to%20python/study_note.html)
-- 진행중: 22. 04. 04 -
+- 참고 도서: [이것이 취업을 위한 코딩 테스트다 with 파이썬 - 부록 A](http://www.yes24.com/Product/Goods/91433923)
+  - 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Coding%20test/study_note.html)
+  - 진행 중: 22. 04. 17 -
 
 ### 3 백준 1~7 단계별로 풀어보기
 - [Source](https://www.acmicpc.net/step)
 
 ### 4 자료구조와 알고리즘 공부
-- 참고 도서: [이것이 취업을 위한 코딩 테스트다 with 파이썬](http://www.yes24.com/Product/Goods/91433923)
 - [백준](https://www.acmicpc.net/problemset): 책에서 배운 내용 관련 문제 찾아서 풀어보기

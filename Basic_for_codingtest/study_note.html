@@ -1829,7 +1829,13 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
             <li><a href="#자료형">1 자료형</a>
             <ul>
             <li><a href="#수-자료형">수 자료형</a></li>
+            <li><a href="#리스트-자료형">리스트 자료형</a></li>
+            <li><a href="#문자열-자료형">문자열 자료형</a></li>
+            <li><a href="#튜플-자료형">튜플 자료형</a></li>
+            <li><a href="#사전-자료형">사전 자료형</a></li>
+            <li><a href="#집합-자료형">집합 자료형</a></li>
             </ul></li>
+            <li><a href="#조건문">2 조건문</a></li>
             </ul>
           </div>
           <div data-position="sidebar:post-end" class="InjectedComponents"><div class="dark-theme-toggler"><div class="toggle "><div class="toggle-track"><div class="toggle-track-check"><img src="data:image/png;base64,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" role="presentation" style="pointer-events: none;" width="16" height="16"></div> <div class="toggle-track-x"><img src="data:image/png;base64,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" role="presentation" style="pointer-events: none;" width="16" height="16"></div></div> <div class="toggle-thumb"></div></div> <input type="checkbox" aria-label="Switch between Dark and Default theme" class="toggler-screen-reader-only"></div></div>
@@ -1922,7 +1928,706 @@ print(a)</code></pre>
 \]</span></p>
 <p>지수 표현 방식은 코딩 테스트에서 많이 사용 됨. 예컨데, 최단 경로
 문제에서는 도달할 수 없는 노드에 대하여 최단 거리를 “무한(INF)”으로
-설정하곤 함.</p>
+설정하곤 함. 최단 경로로 가능한 최댓값이 10억 미만이라면 무한(INF)을
+표현할 때 10억(<code>1e9</code>)을 이용할 수 있음. 혹은,
+<code>987,654,321</code>이라 적으면 이게 1e9와 유사할 정도로 크므로
+이렇게 적기도 함. 책의 최단 경로 파트 예제에서도 이렇게 표현함:</p>
+<pre class="python"><code>a = 1e9
+print(a)</code></pre>
+<pre><code>## 1000000000.0</code></pre>
+<pre class="python"><code>a = 75.25e1
+print(a)</code></pre>
+<pre><code>## 752.5</code></pre>
+<pre class="python"><code>a = 3954e-3
+print(a)</code></pre>
+<pre><code>## 3.954</code></pre>
+<p>보통 컴퓨터 시스템은 수 데이터를 처리할 때 2진수를 이용하며, 실수를
+처리할 때 부동 소수점(Floating-point) 방식을 이용함. 오늘날 가장 널리
+쓰이는 IEEE754 표준에서는 실수형을 저장하기 위해 4바이트, 혹은
+8바이트라는 고정된 크기의 메모리를 할당하며, 이러한 이유로 인해 현대
+컴퓨터 시스템은 대체로 실수 정보를 표현하는 정확도에 한계를 가짐.</p>
+<p>예를 들어, 10진수 체계에서는 0.3과 0.6을 더한 값이 0.9로 정확히
+떨어지지만, 2진수에서는 0.9를 정확히 표현할 수 있는 방법이 없음. 물론
+최대한 0.9와 가깝게 표현하지만 표현한 값이 정확히 0.9가 아닌 미세한
+오차가 발생. 일반적으로 코딩 테스트 문제를 풀기 위해 컴퓨터의 내부 동작
+방식까지 자세히 알 필요는 없으나 컴퓨터가 실수를 정확히 표현하지
+못한다는 사실만은 기억하자. 예컨데, 0.3과 0.6을 더한값이
+<code>0.8999~</code>로 저장되는 것을 알 수 있음:</p>
+<pre class="python"><code>a = 0.3 + 0.6
+print(a)</code></pre>
+<pre><code>## 0.8999999999999999</code></pre>
+<pre class="python"><code>if a == 0.9:
+    print(True)
+else:
+    print(False)</code></pre>
+<pre><code>## False</code></pre>
+<p>따라서 소수점 값을 비교하는 작업이 필요한 문제라면 실수 값을 비교하지
+못해서 원하는 결과를 얻지 못할 수 있음. 이럴 때는 round() 함수를 이용할
+수 있음. 흔히 코딩 테스트 문제에서는 실수형 데이터를 비교할 때 소수점
+다섯 번째 자리에서 반올림한 결과가 같으면 정답으로 인정하는 식으로
+처리함. 그럴 때는 다음과 같이 round() 함수를 이용함:</p>
+<pre class="python"><code>a = 0.3 + 0.6
+print(round(a, 4))</code></pre>
+<pre><code>## 0.9</code></pre>
+<pre class="python"><code>if round(a, 4) == 0.9:
+    print(True)
+else:
+    print(False)</code></pre>
+<pre><code>## True</code></pre>
+</div>
+<div id="수-자료형의-연산" class="section level3">
+<h3>수 자료형의 연산</h3>
+<p>프로그래밍에서는 사칙연산을 이용해 계산하는데, 이 중 나누기
+연산자(<code>/</code>)는 파이썬에서 주의해서 사용해야함. 파이썬에서
+나누기 연산자는 나눠진 결과를 기본적으로 실수형을로 처리함.</p>
+<p>코딩 테스트 문제를 풀 때에는 나머지 연산자(<code>%</code>)를 이용할
+때가 많은데, 예를 들어 특정한 변수 <code>a</code>가 홀수인지 알아볼
+때에는 “a가 2로 나눈 나머지가 1인지” 확인해야함. 이럴 때는 나머지
+연산자를 사용함. 또한, 나눈 결과에서 몫만을 얻고자 할 때는 몫
+연산자(<code>//</code>) 이용:</p>
+<pre class="python"><code>a = 7
+b = 3
+
+print(a / b)</code></pre>
+<pre><code>## 2.3333333333333335</code></pre>
+<pre class="python"><code>print(a % b)</code></pre>
+<pre><code>## 1</code></pre>
+<pre class="python"><code>print(a // b)</code></pre>
+<pre><code>## 2</code></pre>
+<p>이외 거듭제곱 연산자(<code>**</code>)를 비롯해 다양한 연산자들이
+존재함:</p>
+<pre class="python"><code>a = 5
+b = 3
+print(a**b)</code></pre>
+<pre><code>## 125</code></pre>
+</div>
+</div>
+<div id="리스트-자료형" class="section level2">
+<h2>리스트 자료형</h2>
+<p>리스트는 여러 개 데이터를 연속적으로 담아 처리하기 위해 사용할 수
+있다. R의 리스트 자료형을 떠올려서는 안됨. 아마, R의 배열(Array)
+자료형과 동일해 보임. 파이썬의 리스트 자료형은 C나 잡아와 같은
+프로그래밍 언어의 배열(Array) 기능을 포함하고 있으며, 내부적으로 연결
+리스트 자료구조를 채택하고 있어서 append(), remove() 등의 메서드를
+지원함. 파이썬 리스트는 C++의 STL vector와 유사하며, 리스트 대신 배열
+혹은 테이블이라고 부르기도 함.</p>
+<div id="리스트-만들기" class="section level3">
+<h3>리스트 만들기</h3>
+<p>리스트는 대괄호(<code>[]</code>)안에 원소를 넣어 초기화하고,
+쉼표(<code>,</code>)로 원소를 구분함. 리스트의 원소에 접근할 때는
+인덱스(Index) 값을 괄호 안에 넣으면 됨. 이때 인덱스는 0부터 시작. 그리고
+빈 리스트를 선언하고자 할 때는 <code>list()</code> 혹은 간단히
+대괄호(<code>[]</code>)를 이용할 수 있음.</p>
+<p>다음은 1부터 9까지 모든 정수 데이터를 담은 리스트를 만든 다음 특정
+인덱스의 원소에 접근하여 출력하는 예제임:</p>
+<pre class="python"><code>a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a)
+
+# 인덱스 4, 즉 5번째 원소에 접근</code></pre>
+<pre><code>## [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
+<pre class="python"><code>print(a[4])
+
+# 빈 리스트 선언 방법 1</code></pre>
+<pre><code>## 5</code></pre>
+<pre class="python"><code>a = list()
+print(a)
+
+# 빈 리스트 선언 방법 2</code></pre>
+<pre><code>## []</code></pre>
+<pre class="python"><code>a = []
+print(a)</code></pre>
+<pre><code>## []</code></pre>
+<p>코딩 테스트 문제에서는 주로 크기가 N인 1차원 리스트를 초기화해야
+하는데 다음 방식으로 초기화하면 편함:</p>
+<pre class="python"><code># 크기가 N이고, 모든 원소가 0인 1차원 리스트 초기화
+n = 10
+a = [0] * n
+print(a)</code></pre>
+<pre><code>## [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</code></pre>
+</div>
+<div id="리스트의-인덱싱과-슬라이싱" class="section level3">
+<h3>리스트의 인덱싱과 슬라이싱</h3>
+<p>인덱스 값을 입력해 리스트의 특정 원소에 접근하는 것을 인덱싱이라고
+함. 파이썬에서 인덱스값은 양의 정수, 음의 정수 모두 가능하며 음의 정수는
+원소를 거꾸로 탐색함. 즉, 인덱스에 <code>-1</code>을 넣으면 가장 마지막
+원소가 출력됨. 이런 성질을 이용해 인덱싱으로 특정 원소에 접근한 뒤, 그
+값을 간단히 바꿀 수도 있음.</p>
+<pre class="python"><code>a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a[-1])</code></pre>
+<pre><code>## 9</code></pre>
+<pre class="python"><code>print(a[-3])
+
+# 네 번째 원소 값 변경</code></pre>
+<pre><code>## 7</code></pre>
+<pre class="python"><code>a[3] = 7
+print(a)</code></pre>
+<pre><code>## [1, 2, 3, 7, 5, 6, 7, 8, 9]</code></pre>
+<p>또한, 리스트에서 연속적 위치를 갖는 원소를 가져와야할 때는
+슬라이싱(Slicing)을 이용할 수 있음. 이때는 대괄호 안에
+콜론(<code>:</code>)을 넣어 시작 인덱스와 (끝 인덱스-1)을 설정할 수
+있음. 예를 들어 a 라는 리스트의 두 번째 원소부터 네 번째 원소까지의 모든
+데이터를 갖는 리스트를 가져오고 싶다면 <code>a[1:4]</code>라고 넣으면
+됨. 앞서 말했듯 리스트의 인덱스는 0부터 출발하기에 두 번째 원소의
+인데스는 1이 됨. 그리고 끝 인덱스의 경우 1을 뺀 값의 인덱스까지 처리 됨.
+따라서, <code>a[1:4]</code>라고 작성하면 되는 것임:</p>
+<pre class="python"><code>a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(a[1:4])</code></pre>
+<pre><code>## [2, 3, 4]</code></pre>
+</div>
+<div id="리스트-컴프리헨션" class="section level3">
+<h3>리스트 컴프리헨션</h3>
+<p>리스트 컴프리헨션은 리스트를 초기화하는 방법 중 하나임. 리스트
+컴프리헨션을 이용하면 대괄호(<code>[]</code>) 안에 조건문과 반복문을
+넣는 방식으로 리스트를 초기화 할 수 있음. 간단히 0부터 19까지의 수
+중에서 홀수만 포함하는 리스트를 만들고자 할 때 다음과 같이 리스트를
+초기화할 수 있음. 이 경우 한 줄의 소스코드로 리스트를 초기화 할 수 있어
+매우 편함:</p>
+<pre class="python"><code>array = [i for i in range(20) if i % 2 == 1]
+
+print(array)</code></pre>
+<pre><code>## [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]</code></pre>
+<p>참고로 위 소스코드를 일반적인 소스코드로 작성하면 다음과 같음:</p>
+<pre class="python"><code>array = []
+for i in range(20):
+    if i % 2 == 1:
+        array.append(i)
+    
+print(array)</code></pre>
+<p>리스트 컴프리헨션을 이용했을 때의 소스코드가 훨씬 짧고 간결한 것을 알
+수 있음. 또 다른 예시로 1부터 9까지 수의 제곱 값을 포함하는 리스트를
+만들고자 할 때는 다음과 같이 리스트를 초기화 할 수 있음:</p>
+<pre class="python"><code>array = [i*i for i in range(1, 10)]
+
+print(array)</code></pre>
+<pre><code>## [1, 4, 9, 16, 25, 36, 49, 64, 81]</code></pre>
+<p>이러한 리스트 컴프리헨션은 코딩 테스트에서 2차원 리스트를 초기화할 때
+매우 효과적으로 사용될 수 있음. 예를 들어, <span class="math inline">\(N
+\times M\)</span> 크기의 2차원 리스트를 초기화할 때는 다음과 같이
+사용함.</p>
+<pre class="python"><code>n = 3
+m = 4
+array = [[0]*m for _ in range(n)]
+print(array)</code></pre>
+<pre><code>## [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]</code></pre>
+<p>여기서 언더바(<code>_</code>)는 파이썬에서 반복을 수행하되, 반복을
+위한 변수의 값을 무시하고자 할 때 자주 사용한다. 예를 들어 1부터 9까지의
+자연수를 더할 때는 왼쪽 예시처럼 작성하지만:</p>
+<pre class="python"><code>summary = 0
+for i in range(1, 10):
+    summary += i
+print(summary)</code></pre>
+<pre><code>## 45</code></pre>
+<p>단순히 “Hello World”를 5번 출력할 때는 다음과 같이 언더바를 이용하여
+무시할 수 있음.</p>
+<pre class="python"><code>for _ in range(5):
+    print(&quot;Hello World&quot;)</code></pre>
+<pre><code>## Hello World
+## Hello World
+## Hello World
+## Hello World
+## Hello World</code></pre>
+<p>참고로 특정 크기의 2차원 리스트를 초기화할 때는 반드시 리스트
+컴프리헨션을 이용해야함. 만약 다음과 같이 <span class="math inline">\(N
+\times M\)</span> 크기의 2차원 리스트를 초기화한다면, 의도하지 않은
+결과가 나올 수 있음.</p>
+<pre class="python"><code># 잘못된 방법
+n = 3
+m = 4
+array = [[0] * m] * n
+print(array)</code></pre>
+<pre><code>## [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]</code></pre>
+<pre class="python"><code>array[1][1] = 5
+print(array)</code></pre>
+<pre><code>## [[0, 5, 0, 0], [0, 5, 0, 0], [0, 5, 0, 0]]</code></pre>
+<p>위와 같이 잘못된 방법으로 2차원 리스트를 초기화 한 경우,
+<code>array[1][1]</code>의 값을 5로 바꾸었을 뿐인데 3개의 리스트에서
+인덱스 1에 해당하는 원소들의 값이 모두 5로 바뀐 것을 확인할 수 있음.
+이는 내부적으로 포함된 3개의 리스트가 모두 동일한 객체에 대한 3개의
+레퍼런스로 인식되기 때문. 따라서 특정한 크기를 갖는 2차원 리스트를
+초기화할 때는 반드시 리스트 컴프리헨션을 이용해야 한다는 적음 기억할
+것.</p>
+</div>
+<div id="리스트-관련-기타-메서드" class="section level3">
+<h3>리스트 관련 기타 메서드</h3>
+<p>리스트와 관련한 기타 메서드를 사용하면 리스트 자료형을 효과적으로
+이용할 수 있음. 주요 메서드는 다음 표와 같음.</p>
+<table style="width:78%;">
+<colgroup>
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>메서드명</th>
+<th>사용법</th>
+<th>설명</th>
+<th>시간 복잡도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>append()</code></td>
+<td><code>변수 명 .append()</code></td>
+<td>리스트에 원소 하나 삽입</td>
+<td><span class="math inline">\(O(1)\)</span></td>
+</tr>
+<tr class="even">
+<td><code>sort()</code></td>
+<td><p><code>변 수 명.sort()</code></p>
+<p><code>변수  명 .s ort(rev e r se = True)</code></p></td>
+<td><p>오름차순 정렬</p>
+<p>내림차순 정렬</p></td>
+<td><span class="math inline">\(O(NlogN)\)</span></td>
+</tr>
+<tr class="odd">
+<td><code>reverse()</code></td>
+<td><code>변수 명 .reverse()</code></td>
+<td>원소 순서 뒤집기</td>
+<td><span class="math inline">\(O(N)\)</span></td>
+</tr>
+<tr class="even">
+<td><code>insert()</code></td>
+<td><code>변수 명.i n sert (삽 입할  위 치  인덱스 , 삽입할 값)</code></td>
+<td>특정 인덱스에 원소 삽입</td>
+<td><span class="math inline">\(O(N)\)</span></td>
+</tr>
+<tr class="odd">
+<td><code>count()</code></td>
+<td><code>변 수명.co u n t(특정 값)</code></td>
+<td>특정 값을 갖는 데이터의 개수 세기</td>
+<td><span class="math inline">\(O(N)\)</span></td>
+</tr>
+<tr class="even">
+<td><code>remove()</code></td>
+<td><code>변수 명.rem o v e(특정 값)</code></td>
+<td>특정 값을 갖는 원소를 제거하는데, 값을 가진 원소가 여러 개면 하나만
+제거</td>
+<td><span class="math inline">\(O(N)\)</span></td>
+</tr>
+</tbody>
+</table>
+<pre class="python"><code>a = [1, 4, 3]
+print(&quot;기본 리스트: &quot;, a)
+
+# 리스트에 원소 삽입</code></pre>
+<pre><code>## 기본 리스트:  [1, 4, 3]</code></pre>
+<pre class="python"><code>a.append(2)
+print(&quot;삽입: &quot;, a)
+
+# 오름차순 정렬</code></pre>
+<pre><code>## 삽입:  [1, 4, 3, 2]</code></pre>
+<pre class="python"><code>a.sort()
+print(&quot;오름차순 정렬: &quot;, a)
+
+# 내림차순 정렬</code></pre>
+<pre><code>## 오름차순 정렬:  [1, 2, 3, 4]</code></pre>
+<pre class="python"><code>a.sort(reverse = True)
+print(&quot;내림차순 정렬: &quot;, a)
+
+# 리스트 원소 뒤집기</code></pre>
+<pre><code>## 내림차순 정렬:  [4, 3, 2, 1]</code></pre>
+<pre class="python"><code>a.reverse()
+print(&quot;원소 뒤집기: &quot;, a)
+
+# 특정 인덱스에 데이터 추가</code></pre>
+<pre><code>## 원소 뒤집기:  [1, 2, 3, 4]</code></pre>
+<pre class="python"><code>a.insert(2, 3)
+print(&quot;인덱스 2에 3추가: &quot;, a)
+
+# 특정 값인 데이터 개수 세기</code></pre>
+<pre><code>## 인덱스 2에 3추가:  [1, 2, 3, 3, 4]</code></pre>
+<pre class="python"><code>print(&quot;값이 3인 데이터 개수: &quot;, a.count(3))
+
+# 특정 값 데이터 삭제</code></pre>
+<pre><code>## 값이 3인 데이터 개수:  2</code></pre>
+<pre class="python"><code>a.remove(1)
+print(&quot;값이 1인 데이터 삭제: &quot;, a)</code></pre>
+<pre><code>## 값이 1인 데이터 삭제:  [2, 3, 3, 4]</code></pre>
+<p>이 중 <code>insert()</code>와 <code>append()</code>,
+<code>remove()</code>를 특히 더 눈여겨 둬야함.</p>
+<p>코딩 테스트에서 <code>insert()</code>를 사용할 때 원소의 개수가 <span class="math inline">\(N\)</span>개면, 시간 복잡도는 <span class="math inline">\(O(N)\)</span>이다. 파이썬의 리스트 자료형의
+<code>append()</code> 함수는 <span class="math inline">\(O(1)\)</span>에에 수행되는 데에 반해
+<code>insert()</code>는 동작이 느리다. 중간에 원소를 삽입한 뒤에,
+리스트의 원소 위치를 조정해줘야 하기 때문. 따라서,
+<code>insert()</code>를 남발하면 시간 초과로 테스트를 통과하지 못할 수도
+있음.</p>
+<p><code>remove()</code>의 시간 복잡도는 <code>insert()</code>와
+마찬가지로 <code>O(N)</code>임. 리스트 중간에 있는 원소를 삭제하고, 원소
+위치를 조정해주어야 하기 때문. 그럼, 특정한 값의 원소를 모두 제거하려면
+어떻게 해야하나? 다른 프로그래밍 언어에서는 <code>remove_all()</code>과
+같은 함수로 간단하게 특정 값을 갖는 모든 원소를 제거할 수 있으나,
+파이썬의 경우 그러한 함수를 기본적으로 제공하지 않으므로 다음과 같은
+방법을 이용하면 좋다.</p>
+<p>다음 코드에서 (1) 부분은 <code>a</code>에 포함된 원소를 하나씩
+확인하며 그 원소가 <code>remove_set</code>에 포함되어 있지않았을 때만
+리스트 변수인 <code>result</code>에 넣겠다는 의미다. 여기서
+중괄호(<code>{}</code>)로 묶인 <code>remove_set</code>은 이따가 배울
+집합 자료형에 해당. 집합 자료형은 이와 같이 ’특정 데이터가 이미 등장한
+적이 있는지 여부’를 체크할 때 유용함.</p>
+<pre class="python"><code>a = [1, 2, 3, 4, 5, 5, 5]
+remove_set = {3, 5}
+
+result = [i for i in a if i not in remove_set] # (1)
+print(result)</code></pre>
+<pre><code>## [1, 2, 4]</code></pre>
+</div>
+</div>
+<div id="문자열-자료형" class="section level2">
+<h2>문자열 자료형</h2>
+<div id="문자열-초기화" class="section level3">
+<h3>문자열 초기화</h3>
+<p>문자열 변수를 초기화 할 때는 큰따옴표나 작은 따옴표를 이용함.</p>
+<pre class="python"><code>data = &quot;Hello World&quot;
+print(data)</code></pre>
+<pre><code>## Hello World</code></pre>
+<pre class="python"><code>data = &quot;Don&#39;t you know \&quot;Python\&quot;?&quot;
+print(data)</code></pre>
+<pre><code>## Don&#39;t you know &quot;Python&quot;?</code></pre>
+</div>
+<div id="문자열-연산" class="section level3">
+<h3>문자열 연산</h3>
+<p>파이썬에서는 문자열 연사도 지원하는데, 문자열 처리시 유용하게 사용
+가능. 예를 들어, 문자열 변수에 <code>+</code>을 이용하면 단순히 문자열이
+더해져서 연결됨.</p>
+<pre class="python"><code>a = &quot;Hello&quot;
+b = &quot;World&quot;
+print(a + &quot; &quot; + b)</code></pre>
+<pre><code>## Hello World</code></pre>
+<p>문자열 변수에 양의 정수를 곱하면, 문자열이 그 값만큼 여러 번
+더해진다.</p>
+<pre class="python"><code>a = &quot;String&quot;
+print(a * 3)</code></pre>
+<pre><code>## StringStringString</code></pre>
+<p>파이썬의 문자열은 내부적으로 리스트와 같이 처리됨. 즉, 문자열은 여러
+개의 문자가 합쳐진 리스트라고 볼 수 있음. 따라서 문자열 데이터에
+대해서도 마찬가지로 인덱싱과 슬라이싱을 이용할 수 있음.</p>
+<pre class="python"><code>a = &quot;ABCDEF&quot;
+print(a[2:4])</code></pre>
+<pre><code>## CD</code></pre>
+</div>
+</div>
+<div id="튜플-자료형" class="section level2">
+<h2>튜플 자료형</h2>
+<p>파이썬의 튜플 자료형은 리스트와 거의 비슷한데 다음과 같은 차이가
+있음:</p>
+<ul>
+<li><p>튜플은 한 번 선언된 값을 변경할 수 없음</p></li>
+<li><p>리스트는 대괄호(<code>[]</code>)를 이용하지만, 튜플은
+소괄호(<code>()</code>)를 이용</p></li>
+</ul>
+<p>예를 들어, 하나의 튜플 데이터를 선언한 다음, 값을 출력하고 튜플의
+특정 값을 변경해보면:</p>
+<pre class="python"><code>a = (1, 2, 3, 4)
+print(a)</code></pre>
+<pre><code>## (1, 2, 3, 4)</code></pre>
+<pre class="python"><code>a[2] = 7</code></pre>
+<pre><code>## Error in py_call_impl(callable, dots$args, dots$keywords): TypeError: &#39;tuple&#39; object does not support item assignment</code></pre>
+<p>말 그대로 대입 연산자(<code>=</code>)를 사용해 값을 변경할 수 없다는
+의미. 튜플 자료형은 그래프 알고리즘을 구현할 때 자주 사용됨. 예를 들어
+다익스트라 최단 경로 알고리즘처럼 최단 경로를 찾아 주는 알고리즘의
+내부에서는 우선순위 큐를 이용하는 데 해당 알고리즘에서 우선순위 큐에 한
+번 들어간 값은 변경되지 않음. 그래서 그 우선순위 큐에 들어가는 데이터를
+튜플로 구성해 소스코드를 작성함. 이렇게 알고리즘을 구현하는 과정에서
+일부러 튜플을 이용하게되면 혹여나 자신이 알고리즘을 잘못작성함으로써
+변경하면 안 되는 값이 변경되고 있지는 않은지 체크할 수 있음. 또한 튜플은
+리스트에 비해 상대적으로 공간 효율적이고, 일반적으로 각 원소의 성질이
+서로 다를 때 주로 사용함. 흔히 다익스트라 최단 경로 알고리즘에서는
+“비용”과 “노드번호”라는 서로 다른 성질의 데이터를 (비용, 노드번호)
+형태로 함께 튜플로 묶어서 관리하는 것이 관례이다.</p>
+</div>
+<div id="사전-자료형" class="section level2">
+<h2>사전 자료형</h2>
+<div id="사전-자료형-소개" class="section level3">
+<h3>사전 자료형 소개</h3>
+<p>사전 자료형(Dictionary)은 키(Key)와 값(Value)의 쌍을 데이터로 갖는
+자료형임. 앞서 다룬 리스트나 튜플은 값을 순차적으로 저장한다는 특징이
+있으나, 사전 자료형은 키-값 쌍을 데이터로 가진다는 점에서, 우리가 원하는
+변경 불가능한 데이터를 키로 사용할 수 있음.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> 사전 자료형의 예시를
+하나 들어보자. 다음과 같이 키-값 쌍으로 구성되는 데이터를 담아야 한다면
+어떻게 할 수 있을까?</p>
+<table>
+<thead>
+<tr class="header">
+<th>키(Key)</th>
+<th>값(Value)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>사과</td>
+<td>Apple</td>
+</tr>
+<tr class="even">
+<td>바나나</td>
+<td>Banana</td>
+</tr>
+<tr class="odd">
+<td>코코넛</td>
+<td>Coconut</td>
+</tr>
+</tbody>
+</table>
+<p>키로 한글 단어를 넣고, 값으로 영어 단어를 넣어 “사과”의 영어 단어를
+알고싶다면 “사과”라는 키 값을 갖는 데이터에 바로 접근하면 됨. 파이썬의
+사전 자료형은 내부적으로 ’해시 테이블(Hash Table)’을 이용하므로
+기본적으로 데이터의 검색 및 수정에 있어 <span class="math inline">\(O(1)\)</span>의 시간에 처리할 수 있음. 이 책에서는
+해시 테이블에 대해 깊게 다루지 않을 것이고, 위와 같이 키-값 쌍으로
+구성된 데이터를 처리함에 있어서 리스트보다 훨씬 빠르게 동작한다는 점을
+기억해라.</p>
+<pre class="python"><code>data = dict()
+data[&quot;사과&quot;] = &quot;Apple&quot;
+data[&quot;바나나&quot;] = &quot;Banana&quot;
+data[&quot;코코넛&quot;] = &quot;Coconut&quot;
+
+print(data)</code></pre>
+<pre><code>## {&#39;사과&#39;: &#39;Apple&#39;, &#39;바나나&#39;: &#39;Banana&#39;, &#39;코코넛&#39;: &#39;Coconut&#39;}</code></pre>
+<p>이러한 사전 자료형은 코딩 테스트에서도 자주 사용될 수 있음. 예를
+들어, 학생의 번호가 1부터 10,000,000까지로 구성되어 있는 상황에 최대
+10,000명의 학생을 선택했다고 가정해보자. 이후에 특정한 학생 번호가
+주어졌을 때 해당 학생이 선택되었는지를 어떻게 빠르게 알 수 있을까? 만약
+리스트를 이용한다면, 1부터 10,000,000까지의 각 번호가 ‘선택 되었는 지를
+저장할 수 있는’ 리스트를 만들어야 함. 다시 말해, 1,000만개 데이터를
+저장할 수 있는 리스트를 만들어야 하므로 많은 메모리 공간이 낭비된다. 이
+중 999만개 가량의 데이터는 쓰지 않을 것임.</p>
+<p>하지만 사전 자료형을 이용하는 경우 1,000만개의 데이터를 담을 필요
+없이 10,000개의 데이터만 사전 자료구조에 들어가므로 훨씬 적은 메모리
+사용 가능. 실제로 사전을 이용했을 때 문제 풀이가 간결해지는 사례는 2부와
+3부의 문제들에서 다루고 있으므로 확인해보면 됨. 사전 자료형에 특정한
+원소가 있는지 검사할 때는 ’원소 in 사전’의 형태를 이용하면 됨. 이는
+리스트나 튜플에 대해서도 사용할 수 있는 문법임.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<pre class="python"><code>if &#39;사과&#39; in data:
+    print(&quot;&#39;사과&#39;를 키로 갖는 데이터가 존재함.&quot;)</code></pre>
+<pre><code>## &#39;사과&#39;를 키로 갖는 데이터가 존재함.</code></pre>
+</div>
+<div id="사전-자료형-관련-함수" class="section level3">
+<h3>사전 자료형 관련 함수</h3>
+<p>대표적으로 키와 값을 별도로 뽑아내는 함수가 있음. 키만 뽑아서
+리스트로 이용할 때는 <code>keys()</code>, 값만 뽑아서 리스트로 이용할
+때는 <code>values()</code>를 이용할 수 있음.</p>
+<pre class="python"><code>key_list = data.keys()
+value_list = data.values()
+print(key_list)</code></pre>
+<pre><code>## dict_keys([&#39;사과&#39;, &#39;바나나&#39;, &#39;코코넛&#39;])</code></pre>
+<pre class="python"><code>print(value_list)
+
+# 각 키에 따른 값을 하나씩 출력</code></pre>
+<pre><code>## dict_values([&#39;Apple&#39;, &#39;Banana&#39;, &#39;Coconut&#39;])</code></pre>
+<pre class="python"><code>for key in key_list:
+    print(data[key])</code></pre>
+<pre><code>## Apple
+## Banana
+## Coconut</code></pre>
+</div>
+</div>
+<div id="집합-자료형" class="section level2">
+<h2>집합 자료형</h2>
+<div id="집합-자료형-소개" class="section level3">
+<h3>집합 자료형 소개</h3>
+<p>집합(Set)은 기본적으로 리스트 또는 문자열을 이용해 만들 수 있는데,
+집합은 다음과 같은 특징이 있음:</p>
+<ul>
+<li><p>중복 허용 X</p></li>
+<li><p>순서 X</p></li>
+</ul>
+<p>기본에 다루었던 리스트나 튜플은 순서가 있기 때문에 인덱싱을 통해
+자료형의 값을 얻을 수 있었음. 반면에 사전 자료형과 집합 자료형은 순서가
+없기 때문에 인덱싱으로 값을 얻을 수 없다는 특징이 있음. 이와 더불어 집합
+자료형에서는 키가 존재하지 않고, 값 데이터만을 담게 됨. 특정 원소가
+존재하는지를 검사하는 연산의 시간 복잡도는 사전 자료형과 마찬가지로
+<code>O(1)</code>임.</p>
+<p>방금 사전 자료형에 대해 다룰 때 언급했던 ’학생 번호가 주어졌을 때
+해당 학생이 선택되었는지 여부를 출력하는 문제’에서도 집합 자료형이
+효과적으로 사용될 수 있음. 이와 같이 집합 자료형의 사용 방법을 알아두면
+효과적으로 이용될 때가 있음. 특히, ’특정한 데이터가 이미 등장한 적이
+있는 지 여부’를 체크할 때 매우 효과적. 집합 자료형을 초기화 할 때는
+<code>set()</code>을 이용하거나, 중괄호(<code>{}</code>) 안에 각 원소를
+콤마(<code>,</code>)를 기준으로 구분해서 넣으면 됨.</p>
+<pre class="python"><code>data = set([1, 1, 2, 3, 4, 4, 5])
+print(data)</code></pre>
+<pre><code>## {1, 2, 3, 4, 5}</code></pre>
+<pre class="python"><code>data = {1, 1, 2, 3, 4, 4, 5}
+print(data)</code></pre>
+<pre><code>## {1, 2, 3, 4, 5}</code></pre>
+</div>
+<div id="집합-자료형의-연산" class="section level3">
+<h3>집합 자료형의 연산</h3>
+<p>집합 연산으로는 합집합(<code>|</code>), 교집합(<code>&amp;</code>),
+차집합(<code>-</code>)이 가능.</p>
+<pre class="python"><code>a = {1, 2, 3, 4, 5}
+b = {3, 4, 5, 6, 7}
+
+print(a | b)</code></pre>
+<pre><code>## {1, 2, 3, 4, 5, 6, 7}</code></pre>
+<pre class="python"><code>print(a &amp; b)</code></pre>
+<pre><code>## {3, 4, 5}</code></pre>
+<pre class="python"><code>print(a - b)</code></pre>
+<pre><code>## {1, 2}</code></pre>
+</div>
+<div id="집합-자료형-관련-함수" class="section level3">
+<h3>집합 자료형 관련 함수</h3>
+<ul>
+<li><code>add()</code>: 하나의 집합 데이터에 값을 추가</li>
+<li><code>update()</code>: 여러 개의 값을 한꺼번에 추가</li>
+<li><code>remove()</code>: 특정 값 제거</li>
+</ul>
+<p>이때 <code>add()</code>와 <code>remove()</code> 함수는 모두 시간
+복잡도가 <code>O(1)</code>임. 그 이유는, 집합 자료형에 순서가 없기
+때문으로 추정됨.</p>
+<pre class="python"><code>data = {1, 2, 3}
+print(data)</code></pre>
+<pre><code>## {1, 2, 3}</code></pre>
+<pre class="python"><code>data.add(4)
+print(data)</code></pre>
+<pre><code>## {1, 2, 3, 4}</code></pre>
+<pre class="python"><code>data.update([5, 6])
+print(data)</code></pre>
+<pre><code>## {1, 2, 3, 4, 5, 6}</code></pre>
+<pre class="python"><code>data.remove(3)
+print(data)</code></pre>
+<pre><code>## {1, 2, 4, 5, 6}</code></pre>
+</div>
+</div>
+</div>
+<div id="조건문" class="section level1">
+<h1>2 조건문</h1>
+<p>조건문을 이용하면 조건에 따라 프로그램의 로직을 설정할 수 있음. 예를
+들어 다음과 같이 어떤 변수의 값이 10 이상일 때에 한해서만 변수의 값을
+출력할 수 있음:</p>
+<pre class="python"><code>x = 15
+
+if x &gt;= 10:
+    print(x)</code></pre>
+<pre><code>## 15</code></pre>
+<p>파이썬에서 조건문은 <code>if ~ elif ~ else</code>을 이용함.
+<code>elif</code> 또는 <code>else</code>는 경우에 따라 사용하지 않아도
+됨.</p>
+<pre class="python"><code>if 조건문 1:
+    조건문 1이 True 일때 실행 되는 코드
+elif 조건문 2:
+    조건문 1에 해당하지 않고, 조건문 2가 True일 때 실행되는 코드
+else:
+    위의 모든 조건문이 True 값이 아닐 때 실행되는 코드</code></pre>
+<p>다음과 같이 성적 구간에 따른 학점 정보를 출력한다고 가정해보자. 이때
+if ~ elif ~ else 문을 효과적으로 사용할 수 있음.</p>
+<ul>
+<li>성적 90점 이상: A</li>
+<li>성적 90점 미만, 80점 이상: B</li>
+<li>성적 80점 미만, 70점 이상: C</li>
+<li>성적 70점 미만: F</li>
+</ul>
+<pre class="python"><code>score = 85
+if score &gt;= 90:
+    print(&quot;학점: A&quot;)
+elif score &gt;= 80:
+    print(&quot;학점: B&quot;)
+elif score &gt;= 70:
+    print(&quot;학점: C&quot;)
+else:
+    print(&quot;학점: F&quot;)</code></pre>
+<pre><code>## 학점: B</code></pre>
+<p>조건문 작성 시 코드의 블록을 들여쓰기로 설정한다는 점을 기억해라.
+들여쓰기가 같은 부분은 함께 실행됨. 다음 코드의 (2)는 조건문과 상관없이
+무조건 실행되는 부분.</p>
+<pre class="python"><code>score = 90
+if score &gt;= 70:
+    print(&#39;성적이 70점 이상입니다.&#39;)
+    if score &gt;= 90:
+        print(&#39;우수한 성적입니다.&#39;)
+else:
+    print(&#39;성적이 70점 미만입니다.&#39;)
+    print(&#39;조금 더 분발하세요.&#39;)
+    </code></pre>
+<pre><code>## 성적이 70점 이상입니다.
+## 우수한 성적입니다.</code></pre>
+<pre class="python"><code>print(&#39;프로그램을 종료합니다.&#39;)</code></pre>
+<pre><code>## 프로그램을 종료합니다.</code></pre>
+<p>파이썬에서 들여쓰기는 스페이스바 4번을 입력해 작성함. 탭을 사용하는
+쪽과 논쟁이 활발하나, 파이썬 커뮤니티에서는 4개의 공백문자를 사용하는
+것이 사실상의 표준.</p>
+<div id="비교-연산자" class="section level3">
+<h3>비교 연산자</h3>
+<p>R과 같음. 편의상 생략.</p>
+</div>
+<div id="논리-연산자" class="section level3">
+<h3>논리 연산자</h3>
+<p>논리 연산자(logical operators)는 2개의 논리 값 사이의 연산을 수행할
+때 사용하는데 파이썬에는 3가지 논리 연산자가 있음. <code>and</code>와
+<code>or</code>은 R과 같으며, <code>not</code>만 알아두면 될 듯.
+<code>not X</code>는 말 그대로, <code>X</code>가 거짓(False)일 때
+참(True)임.</p>
+</div>
+<div id="기타-연산자" class="section level3">
+<h3>기타 연산자</h3>
+<p>파이썬에서는 추가적으로 <code>in</code> 연산자와 <code>not in</code>
+연산자를 제공. 여러 개의 데이터를 담는 자료형으로 리스트, 튜플, 문자열,
+사전과 같은 자료형 존재. 이러한 자료형은 여러 개 데이터를 담고 있어,
+자료형 안에 어떤 값이 존재하는지 확인하는 연산이 필요할 때가 있음. 또한,
+파이썬에서는 조건문의 값이 참(True)이라고 해도, 아무것도 처리하고 싶지
+않을 때 <code>pass</code>문을 만들어 이용가능. 에를 들어, 코드를
+작성하며 디버깅하는 과정에서 일단 조건문의 형태만 만들어 놓고 조건문을
+처리하는 부분은 비워놓고 싶을 때가 있을 수 있음:</p>
+<pre class="python"><code>score = 85
+
+if score &gt;= 80:
+    pass # 나중에 작성할 소스코드
+else:
+    print(&quot;성적이 80점 미만입니다.&quot;)
+
+print(&quot;프로그램을 종료합니다.&quot;)</code></pre>
+<pre><code>## 프로그램을 종료합니다.</code></pre>
+<p>조건문에서 실행될 소스코드가 한 줄이면, 굳이 줄바꿈 하지 않고 간략히
+표현도 가능.</p>
+<pre class="python"><code>score = 85
+if score &gt;= 80: result = &quot;Success&quot;
+else: result = &quot;Fail&quot;</code></pre>
+<p>더 나아가 조건부 표현식(Conditional Expression) 이용시,
+<code>if ~ else</code>문을 한 줄에 작성해 사용 가능.</p>
+<pre class="python"><code>score = 85
+result = &quot;Success&quot; if score &gt;= 80 else &quot;Fail&quot;
+
+print(result)</code></pre>
+<pre><code>## Success</code></pre>
+<p>특히 조건부 표현식은 리스트에 있는 원소의 값을 변경해, 또 다른
+리스트를 만들고자 할 때 매우 간결하게 사용 가능. 예를 들어 리스트에서
+특정 원소 값만을 없앤다고 해보자. 원래 일반적인 조건문을 이용하면 다음과
+같이 작성해야함.</p>
+<pre class="python"><code>a = [1, 2, 3, 4, 5, 5, 5]
+remove_set = {3, 5}
+
+result = []
+for i in a:
+    if i not in remove_set:
+        result.append(i)
+        
+print(i)</code></pre>
+<pre><code>## 5</code></pre>
+<p>다음과 같이 간단히 작성 가능.</p>
+<pre class="python"><code>a = [1, 2, 3, 4, 5, 5, 5]
+remove_set = {3, 5}
+
+result = [i for i in a if i not in remove_set]
+
+print(result)</code></pre>
+<pre><code>## [1, 2, 4]</code></pre>
+<p>그리고, 파이썬에서 한가지 특이한 점은 조건문 안에서 수학의 부등식을
+그대로 사용할 수 있다는 점이다. 예를 들어, 다음과 같은 코드가 있다고
+하자.</p>
+<pre class="python"><code>x = 15
+if x &gt; 0 and x &lt; 20:
+    print(&quot;x는 0이상 20 미만의 수입니다.&quot;)</code></pre>
+<pre><code>## x는 0이상 20 미만의 수입니다.</code></pre>
+<p>이는 다음과 같다:</p>
+<pre class="python"><code>x = 15
+if 0 &lt; x &lt; 20:
+    print(&quot;x는 0이상 20 미만의 수입니다.&quot;)</code></pre>
+<pre><code>## x는 0이상 20 미만의 수입니다.</code></pre>
+<hr />
+</div>
+<div id="reference" class="section level3 unnumbered">
+<h3 class="unnumbered">Reference</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-na2020" class="csl-entry">
 나동빈. 2020. <em>이것이 취업을 위한 코딩 테스트다 with 파이썬</em>.
@@ -1931,6 +2636,17 @@ print(a)</code></pre>
 </div>
 </div>
 </div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>변경 불가능한 자료형이란 수 자료형, 문자열 자료형, 튜플
+자료형과 같이 한 번 초기화되면 변경이 불가능한 자료형을 의미함. 흔히
+사용되지는 않지만, 튜플 자료형이 사전 자료형의 키로 사용되기도 하는데,
+이는 “Q 22 블록이동하기” 문제 풀이에서 사용된다.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>파이썬에서 리스트, 문자열, 튜플 등 순차적 정보를 담는
+자료형을 iterable 자료형이라고 함. in 문법은 이러한 iterable 자료형에
+모두 사용 가능.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 </div>
 

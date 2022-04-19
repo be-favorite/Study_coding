@@ -14,8 +14,8 @@ Python 코딩테스트 스터디 노트입니다.😀
 
 ### 2 Python 기본기 다시 정립
 - 참고 도서: [이것이 취업을 위한 코딩 테스트다 with 파이썬 - 부록 A](http://www.yes24.com/Product/Goods/91433923)
-  - 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Basic_for_codingtest/study_note.html)
-  - 진행 중: 22. 04. 17 -
+- 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Basic_for_codingtest/study_note.html)
+- 진행 중: 22. 04. 17 -
 
 ### 3 백준 1~7 단계별로 풀어보기
 - [Source](https://www.acmicpc.net/step)

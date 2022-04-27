@@ -16,8 +16,7 @@ Python 코딩테스트 스터디 노트입니다.😀
 - 참고 도서: [이것이 취업을 위한 코딩 테스트다 with 파이썬 - 부록 A](http://www.yes24.com/Product/Goods/91433923)
 - 책 저작권으로 인해 완성된 스터디 노트는 부득이하게 암호화되어 제공됩니다.😭
 - Appendix A 코딩테스트를 위한 파이썬 문법
-  - 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Basic_for_codingtest/study_note_encrypted.html)
-  - 완료: 2022. 04. 27
+  - 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Basic_for_codingtest/study_note_encrypted.html) (완료 2022. 04. 27)
 
 ### 3 백준 1~7 단계별로 풀어보기
 - [Source](https://www.acmicpc.net/step)

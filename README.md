@@ -24,4 +24,4 @@ Python 코딩테스트 스터디 노트입니다.😀
 ### 3 코드업 기초 100제
 - ✅ 완료 22. 04. 29
 - 🔗 [Source](https://codeup.kr/index.php)
-- 🔗 [스터디 노트](https://resume-taemo.notion.site/Coding-test-with-Python-3-ccc44933b8544aecbcb4762a6558ef11)
+- 🔗 [스터디 노트](https://resume-taemo.notion.site/Coding-test-with-Python-3-ccc44933b8544aecbcb4762a6558ef11): 토글(▶️)을 누르세요.

@@ -13,13 +13,15 @@ Python 코딩테스트 스터디 노트입니다.😀
 <p align="center"> <img src="study_guideline.jpeg" width="400px"> </p>
 
 ### 1 Miniforge conda 환경 셋업
-- 코딩 테스트에 가상 환경 셋업 까진 필요 없을 것 같으나, 미래에 이것 저것 생각해서..😂
-- 완료일: 22. 03. 31
+- ✅ 완료 22. 03. 31
+- 코딩 테스트에 가상 환경 셋업 까진 필요없으나, 이것 저것 생각해서..😂
 
 ### 2 부록 A 코딩테스트를 위한 파이썬 문법
-- 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Basic_for_codingtest/study_note_encrypted.html) (완료일: 22. 04. 27)
+- ✅ 완료 22. 04. 27
+- 🔗 [스터디 노트](https://be-favorite.github.io/Study_coding/Basic_for_codingtest/study_note_encrypted.html)
+- 무료로 배포된 책이 아니여서, 부득이하게 스터디노트는 암호화하여 제공됩니다.😭
 
-### 3 코드업에서 쉬운 문제부터 200문제가량 풀기
-- 🔗 [코드업](https://codeup.kr/index.php)
-- 기초 100제
-- 간단한 문제 위주 100문제
+### 3 코드업 기초 100제
+- ✅ 완료 22. 04. 29
+- 🔗 [Source](https://codeup.kr/index.php)
+- 🔗 [스터디 노트](https://resume-taemo.notion.site/Coding-test-with-Python-3-ccc44933b8544aecbcb4762a6558ef11)
